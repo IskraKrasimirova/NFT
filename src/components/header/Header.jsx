@@ -4,7 +4,7 @@ import Logo from "..logo/Logo";
 import classNames from "classnames";
 import Grid from "@mui/material/Grid";
 import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material";
+import { InputBase, ButtonBase } from "@mui/material";
 import Button from "@mui/material/Button";
 
 export default function Header() {
@@ -18,8 +18,10 @@ export default function Header() {
                     <SearchIcon />
                     <InputBase className={classNames(styles.searchField)} placeholder="Find assets, users and activity..." />
                 </Grid>
-                <Grid item xs={4}>
-                    <Item>xs=4</Item>
+                <Grid item xs={4} className={classNames(styles.buttonContainer)}>
+                    <ButtonBase variant="contained" color="primary" className={classNames(styles.buttonBase)}>Home</ButtonBase>
+                    <ButtonBase variant="contained" color="primary" className={classNames(styles.buttonBase)}>Activity</ButtonBase>
+                    <Button variant="contained" color="primary" className={classNames(styles.button)}>EXPLORE</Button>
                 </Grid>
             </Grid>
         </div>

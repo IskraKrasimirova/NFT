@@ -1,2 +1,12 @@
 @use '../../styles/colors.scss';
 
+.wrapper {
+    padding: 100px;
+    background-color: colors.$primary_main;
+  }
+  
+  .container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
