@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import Logo from "..logo/Logo";
+import Logo from "../logo/Logo";
 import classNames from "classnames";
 import Grid from "@mui/material/Grid";
 import SearchIcon from "@mui/icons-material/Search";
