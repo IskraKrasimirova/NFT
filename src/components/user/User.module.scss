@@ -1,0 +1,31 @@
+@use "../../styles/colors";
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.name {
+    color: colors.$text_secondary;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+}
+
+.info {
+    color: colors.$secondary_main;
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
